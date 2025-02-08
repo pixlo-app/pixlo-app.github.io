@@ -1,11 +1,152 @@
-/* Base Styles */
+/* General Styles */
 :root {
-    --primary-color: #007AFF;
+    --primary-color: #000000;
     --text-color: #333333;
-    --background-color: #FFFFFF;
-    --secondary-background: #F5F5F7;
+    --light-gray: #666666;
+    --background-color: #ffffff;
 }
 
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+/* Header Styles */
+.header {
+    padding: 1.5rem 2rem;
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Privacy Content Styles */
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.privacy-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.privacy-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--light-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.policy-section {
+    margin-bottom: 3rem;
+}
+
+.policy-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.policy-section h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.5rem 0 1rem;
+    color: var(--primary-color);
+}
+
+.policy-section p, 
+.policy-section ul {
+    color: var(--light-gray);
+    font-size: 1.1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--background-color);
+    padding: 4rem 2rem 2rem;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-section h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.footer-section a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--light-gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
