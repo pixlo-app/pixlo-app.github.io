@@ -1,68 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenHouseNote - Your Smart Open House Companion</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Add Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open House Notes — House hunting, finally organized</title>
+  <meta name="description" content="Track, rate, and compare every open house you visit — then plan the perfect weekend route. Your notes, synced across all your devices.">
+  <meta property="og:title" content="Open House Notes">
+  <meta property="og:description" content="House hunting, finally organized. Track, rate, compare, and plan your open house weekends.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">OpenHouseNote</div>
-            <div class="nav-links">
-                <a href="#download">Download</a>
-           
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy</a>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Your Smart Open House Companion</h1>
-            <p>Track and rate open houses effortlessly. Perfect for homebuyers and real estate professionals.</p>
-            <a href="#" class="download-btn">Download on the App Store</a>
-        </div>
-        <div class="hero-image">
-            <div class="phone-stack">
-                <img src="openhousenote_page1.png" alt="Houses List" class="phone-screen screen-1">
-                <img src="openhousenote_page2.png" alt="Rating Interface" class="phone-screen screen-2">
-                <img src="openhousenote_page3.png" alt="Ratings Summary" class="phone-screen screen-3">
-                <img src="openhousenote_page4.png" alt="Insights View" class="phone-screen screen-4">
-                <img src="openhousenote_page5.png" alt="Settings Screen" class="phone-screen screen-5">
-            </div>
-        </div>
-    </section>
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo"><span class="mark">🏠</span> Open House Notes</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <!-- TODO: replace # with the App Store link once live -->
+        <a href="#download" class="nav-cta">Get the app</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Features Section -->
-    <section class="features">
-        <h2>Key Features</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <img src="openhousenote_page1.png" alt="Organize">
-                <h3>Organize Your House Hunt</h3>
-                <p>Log open houses with addresses and dates. Track distances between properties.</p>
-            </div>
-            <div class="feature-card">
-                <img src="openhousenote_page2.png" alt="Rate">
-                <h3>Rate & Remember</h3>
-                <p>Score properties on key features. Add detailed notes and impressions.</p>
-            </div>
-            <div class="feature-card">
-                <img src="openhousenote_page4.png" alt="Insights">
-                <h3>Smart Insights</h3>
-                <p>Compare properties easily. Track your viewing history.</p>
-            </div>
+  <!-- Hero -->
+  <section class="hero" id="download">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">📍 For homebuyers &amp; agents</span>
+        <h1>House hunting,<br><span class="grad">finally organized.</span></h1>
+        <p class="lead">Track, rate, and compare every open house you visit — then plan the perfect weekend route. All in one app.</p>
+        <div class="hero-actions">
+          <!-- TODO: replace href with the App Store link once live -->
+          <a href="#" class="btn"><span class="apple"></span> Download on the App Store</a>
         </div>
-    </section>
+        <p class="hero-note">Free on iPhone · Private by design · iCloud sync</p>
+      </div>
+      <div class="phones">
+        <div class="phone main"><img src="shot-houses.png" alt="Open Houses list with this-weekend planner" loading="lazy"></div>
+        <div class="phone side"><img src="shot-plan.png" alt="Weekend route planner" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Add before closing </body> tag -->
-    <script src="main.js"></script>
+  <!-- Feature rows -->
+  <section id="features">
+    <div class="feature-row reveal">
+      <div class="fr-media"><div class="fr-phone"><img src="shot-plan.png" alt="Weekend route plan" loading="lazy"></div></div>
+      <div class="fr-copy">
+        <div class="tag">Plan your weekend</div>
+        <h2>Every showing, in the right order.</h2>
+        <p>Pick the open houses you want to see and Open House Notes builds a time-feasible driving route — so you never miss a showing or double back across town. Tap any stop for turn-by-turn directions.</p>
+      </div>
+    </div>
+
+    <div class="feature-row reverse reveal">
+      <div class="fr-media"><div class="fr-phone"><img src="shot-detail.png" alt="Rating a home on custom categories" loading="lazy"></div></div>
+      <div class="fr-copy">
+        <div class="tag">Rate what matters</div>
+        <h2>Score homes on your terms.</h2>
+        <p>Rate each home on the criteria you care about, with weights you set. A single clear number cuts through the blur of five houses in one afternoon — and you'll still remember why weeks later.</p>
+      </div>
+    </div>
+
+    <div class="feature-row reveal">
+      <div class="fr-media"><div class="fr-phone"><img src="shot-compare.png" alt="Side-by-side comparison of two homes" loading="lazy"></div></div>
+      <div class="fr-copy">
+        <div class="tag">Decide with confidence</div>
+        <h2>Compare side by side.</h2>
+        <p>Put your top homes head to head. The best value in every row is highlighted automatically — price, location, layout and more — so the decision makes itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature grid -->
+  <section class="grid-section" id="more">
+    <div class="section-head reveal">
+      <h2>Everything you need on visit day</h2>
+      <p>Capture the details while you're standing in the room — not from memory that night.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="ico">🎙️</div><h3>Voice notes</h3><p>Capture impressions hands-free as you walk, transcribed automatically.</p></div>
+      <div class="card reveal"><div class="ico">📸</div><h3>Photos</h3><p>Attach photos to remember every room, kitchen and quirk.</p></div>
+      <div class="card reveal"><div class="ico">📄</div><h3>Share reports</h3><p>Send a polished PDF summary to your partner or agent in one tap.</p></div>
+      <div class="card reveal"><div class="ico">☁️</div><h3>iCloud sync</h3><p>Every note on every device, backed up automatically and privately.</p></div>
+      <div class="card reveal"><div class="ico">🚩</div><h3>Deal breakers</h3><p>Flag the must-avoids — busy road, old roof — and never forget them.</p></div>
+      <div class="card reveal"><div class="ico">✨</div><h3>AI disclosure review</h3><p>On-device AI surfaces risks in disclosure PDFs in seconds. <em>Apple Intelligence, iOS 26.</em></p></div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="section-head reveal">
+      <h2>Simple pricing</h2>
+      <p>Start free. Upgrade when your search gets serious.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price reveal">
+        <h3>Free</h3>
+        <div class="amount">$0</div>
+        <p class="sub">Everything you need to get started</p>
+        <ul>
+          <li><span class="ck">✓</span> Track up to 5 homes</li>
+          <li><span class="ck">✓</span> Ratings, notes, photos &amp; voice</li>
+          <li><span class="ck">✓</span> Compare side by side</li>
+          <li><span class="ck">✓</span> Everything you add stays yours</li>
+        </ul>
+      </div>
+      <div class="price pro reveal">
+        <h3>Pro</h3>
+        <div class="amount">$4.99<span> / month</span></div>
+        <p class="sub">or $24.99 once — yours forever</p>
+        <ul>
+          <li><span class="ck">✓</span> Unlimited homes</li>
+          <li><span class="ck">✓</span> Weekend route planner</li>
+          <li><span class="ck">✓</span> PDF reports &amp; sharing</li>
+          <li><span class="ck">✓</span> iCloud sync across devices</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta reveal">
+    <h2>Your next open house weekend, sorted.</h2>
+    <p>Join homebuyers who stopped losing track of the homes they loved.</p>
+    <!-- TODO: replace href with the App Store link once live -->
+    <a href="#" class="btn"><span class="apple"></span> Download on the App Store</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-in">
+      <a href="index.html" class="logo"><span class="mark">🏠</span> Open House Notes</a>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <div class="copy">© 2026 Open House Notes. Made for house hunters.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal-on-scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
